@@ -7,7 +7,7 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background: url("/images/bg-desktop.svg") no-repeat center center/cover;
+    background: url("./images/bg-desktop.svg") no-repeat center center/cover;
     font-family: 'Poppins', sans-serif;
     background-color: hsl(257, 40%, 49%);
     padding: 25px;
@@ -103,7 +103,7 @@
 @media (min-width:375px) and (max-width:768px) {
     .container {
 
-        background: url("/images/bg-mobile.svg") no-repeat center center/cover;
+        background: url("./images/bg-mobile.svg") no-repeat center center/cover;
         background-color: hsl(257, 40%, 49%);
     }
     .header {
