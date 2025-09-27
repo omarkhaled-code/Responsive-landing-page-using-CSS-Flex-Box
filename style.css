@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url("/images/bg-desktop.svg") no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+
+    .img {
+        img {
+
+            /* width:650px */
+        }
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        line-height: 1.6;
+        width: 40%;
+        h3 {
+            font-size: 35px;
+        }
+
+        button {
+            padding: 15px;
+            width: 180px;
+            border: none;
+            border-radius: 25px;
+            color: hsl(257, 40%, 49%);
+            background-color: white;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            font-size: 18px;
+
+
+            &:hover {
+                background-color: hsl(300, 69%, 71%);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-bottom: 20px;
+
+    i {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all;
+        &:hover {
+            color: hsl(300, 69%, 71%);
+            border-color: hsl(300, 69%, 71%);
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width:1440px) {
+    
+    .content {
+        .img img {
+            width: 80%;
+        }
+    }
+    
+}
+
+@media (min-width:375px) and (max-width:768px) {
+    .container {
+
+        background: url("/images/bg-mobile.svg") no-repeat center center/cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .header {
+        img {
+            width: 150px;
+        }
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+        .img {
+            img {
+                width: 100%;
+            }
+        }
+        .text {
+            width: 100%;
+            h3 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 15px;
+            }
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+    .icons {
+        justify-content: center;
+    }
+    
+}
